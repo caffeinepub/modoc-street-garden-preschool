@@ -1,12 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Remove child-capacity wording from Program Details and add new Oregon flower decorative assets to the site.
+**Goal:** Remove the Oregon flower decorative images from the Home page decorative background layer.
 
 **Planned changes:**
-- Remove any “up to 8 kids” / “Limited to 8 children” capacity line from the Program Details section on the Little Sprouts page.
-- Remove the “Capacity: Limited to 8 children” line from the Home page Little Sprouts details card without changing other Program Details fields.
-- Add new minimal Oregon flower illustration PNG assets (transparent background) under `frontend/public/assets/generated` using the specified filenames.
-- Render the new flower assets as subtle, non-interactive, aria-hidden decorative elements in an existing decorative UI area (kept behind content, low-opacity, pointer-events disabled).
+- Delete the four non-interactive, aria-hidden Oregon flower `<img>` elements under the "New Oregon flower decorations" comment in the Home page decorative background layer.
+- Ensure the Home page still renders without console errors and that all other layout/content remains unchanged.
 
-**User-visible outcome:** The site no longer displays a specific child-capacity limit in Program Details, and additional Oregon-flower decorations appear subtly in the background without affecting readability.
+**User-visible outcome:** The Home page looks the same as before except the Oregon flower decorative images no longer appear in the background.

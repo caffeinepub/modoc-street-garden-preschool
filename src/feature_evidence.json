@@ -2,43 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-remove-the-capacity-wording-up-to-8-kids-limited-to-8-children-from-the-program-details-section-wherever-it-appears-on-the-site-including-the-little-sprouts-page-key-details-grid-and-the-home-page-little-sprouts-details-card",
-      "featureTitle": "Remove the capacity wording (“up to 8 kids” / “Limited to 8 children”) from the “Program Details” section wherever it appears on the site (including the Little Sprouts page key-details grid and the Home page Little Sprouts details card).",
-      "files": [
-        "frontend/src/pages/HomePage.tsx",
-        "frontend/src/pages/LittleSproutsPage.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-1"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-create-a-few-additional-oregon-flower-illustration-assets-in-the-same-calm-minimal-botanical-style-as-the-existing-site-decorations-and-add-them-as-static-files-under-frontend-public-assets-generated",
-      "featureTitle": "Create a few additional Oregon flower illustration assets in the same calm, minimal botanical style as the existing site decorations, and add them as static files under frontend/public/assets/generated.",
-      "files": [],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-2"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-render-the-newly-generated-oregon-flower-assets-in-the-ui-as-additional-subtle-decorative-elements-non-interactive-aria-hidden-in-an-existing-decorative-area-so-they-are-visible-in-the-deployed-site",
-      "featureTitle": "Render the newly generated Oregon flower assets in the UI as additional subtle decorative elements (non-interactive, aria-hidden) in an existing decorative area so they are visible in the deployed site.",
+      "featureId": "feature-remove-the-recently-added-oregon-flower-decorative-elements-from-the-home-page-so-they-no-longer-render-the-four-non-interactive-aria-hidden-images-under-the-new-oregon-flower-decorations-comment-in-the-decorative-background-layer",
+      "featureTitle": "Remove the recently added Oregon flower decorative elements from the Home page so they no longer render (the four non-interactive, aria-hidden images under the \"New Oregon flower decorations\" comment in the decorative background layer).",
       "files": [
         "frontend/src/pages/HomePage.tsx"
       ],
@@ -50,7 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-3"
+        "REQ-1"
       ],
       "confidence": "high"
     }

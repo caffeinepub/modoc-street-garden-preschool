@@ -1,72 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Remove capacity wording and add Oregon flower decorative assets",
+  "title": "Remove Oregon flower decorative section from Home page",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Remove child-capacity wording from Little Sprouts Program Details on Home and Little Sprouts pages without changing any other fields.",
+      "summary": "Remove the four non-interactive Oregon flower decorative images from the Home page decorative background layer so they no longer render.",
       "acceptanceCriteria": [
-        "On /little-sprouts, the Program Details area no longer mentions any specific child capacity (the line currently reading “Limited to 8 children” is removed).",
-        "On / (Home), the Little Sprouts details card no longer mentions any specific child capacity (the line currently reading “Capacity: Limited to 8 children” is removed).",
-        "No other Program Details fields (ages/schedule/time/cost/etc.) are changed."
+        "On the Home page, the decorative background layer no longer includes any <img> elements referencing: /assets/generated/ls-oregon-flower-oak.dim_512x512.png, /assets/generated/ls-oregon-flower-oregon-grape.dim_512x512.png, /assets/generated/ls-oregon-flower-camas.dim_512x512.png, /assets/generated/ls-oregon-flower-trillium.dim_512x512.png.",
+        "The rest of the Home page layout (header, details cards, flyer image, and CTA buttons) remains unchanged aside from the removed decorations.",
+        "No console errors are introduced on the Home page due to the removed elements."
       ],
       "file_operations": [
         {
           "path": "frontend/src/pages/HomePage.tsx",
           "operation": "modify",
-          "description": "Remove the single Program Details line that mentions capacity (currently “Capacity: Limited to 8 children”) from the Little Sprouts details card while leaving all other details unchanged."
-        },
-        {
-          "path": "frontend/src/pages/LittleSproutsPage.tsx",
-          "operation": "modify",
-          "description": "Remove the capacity wording from the /little-sprouts Program Details key-details grid (currently the line “Limited to 8 children” under the Cost tile) while keeping all other Program Details fields intact."
-        }
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "summary": "Add new calm, minimal Oregon flower illustration PNG assets (transparent background) under frontend/public/assets/generated using the required filenames.",
-      "acceptanceCriteria": [
-        "At least three new Oregon-flower illustration PNGs (transparent background) are added to frontend/public/assets/generated using the exact filenames specified in imageRequirements.required.",
-        "New assets are visually consistent with the existing nature-themed decorative art (minimal, not cartoonish)."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/public/assets/generated/ls-oregon-flower-oak.dim_512x512.png",
-          "operation": "create",
-          "description": "Add the generated PNG asset for: “Minimal Oregon white oak leaf + acorn line illustration, earthy neutral palette, transparent background”."
-        },
-        {
-          "path": "frontend/public/assets/generated/ls-oregon-flower-oregon-grape.dim_512x512.png",
-          "operation": "create",
-          "description": "Add the generated PNG asset for: “Minimal Oregon grape flower cluster line illustration, earthy neutral palette, transparent background”."
-        },
-        {
-          "path": "frontend/public/assets/generated/ls-oregon-flower-camas.dim_512x512.png",
-          "operation": "create",
-          "description": "Add the generated PNG asset for: “Minimal camas lily bloom line illustration, earthy neutral palette, transparent background”."
-        },
-        {
-          "path": "frontend/public/assets/generated/ls-oregon-flower-trillium.dim_512x512.png",
-          "operation": "create",
-          "description": "Add the generated PNG asset for: “Minimal trillium bloom line illustration, earthy neutral palette, transparent background”."
-        }
-      ]
-    },
-    {
-      "id": "REQ-3",
-      "summary": "Render the new Oregon flower assets as subtle, non-interactive decorative elements in an existing decorative background layer.",
-      "acceptanceCriteria": [
-        "At least one page displays the new Oregon flower images as subtle decoration (e.g., in the Home page’s existing decorative background layer).",
-        "Decorative images do not interfere with content readability (kept low-opacity, behind content, and pointer-events disabled).",
-        "All decorative flower images have empty alt text and/or aria-hidden=\"true\" (consistent with existing decorative assets usage)."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/HomePage.tsx",
-          "operation": "modify",
-          "description": "In the existing Home page decorative background layer (the absolute, pointer-events-none, low-opacity container), add additional <img> elements referencing: frontend/public/assets/generated/ls-oregon-flower-oak.dim_512x512.png, frontend/public/assets/generated/ls-oregon-flower-oregon-grape.dim_512x512.png, frontend/public/assets/generated/ls-oregon-flower-camas.dim_512x512.png, and frontend/public/assets/generated/ls-oregon-flower-trillium.dim_512x512.png. Ensure they remain behind content, do not affect readability (subtle sizing/positioning), have alt=\"\" and aria-hidden=\"true\", and remain non-interactive (pointer events disabled via the existing container)."
+          "description": "Delete the four aria-hidden <img> elements under the \"New Oregon flower decorations\" comment so the Oregon flower decorations no longer render, keeping the rest of the decorative layer and page layout unchanged."
         }
       ]
     }

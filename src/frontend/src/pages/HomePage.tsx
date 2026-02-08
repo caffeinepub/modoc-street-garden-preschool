@@ -27,31 +27,6 @@ export default function HomePage() {
             className="absolute bottom-4 right-8 w-16 h-16 object-contain hidden md:block"
             aria-hidden="true"
           />
-          {/* New Oregon flower decorations */}
-          <img
-            src="/assets/generated/ls-oregon-flower-oak.dim_512x512.png"
-            alt=""
-            className="absolute top-12 left-4 w-20 h-20 object-contain hidden lg:block"
-            aria-hidden="true"
-          />
-          <img
-            src="/assets/generated/ls-oregon-flower-oregon-grape.dim_512x512.png"
-            alt=""
-            className="absolute top-24 right-12 w-24 h-24 object-contain hidden lg:block"
-            aria-hidden="true"
-          />
-          <img
-            src="/assets/generated/ls-oregon-flower-camas.dim_512x512.png"
-            alt=""
-            className="absolute bottom-20 left-16 w-20 h-20 object-contain hidden md:block"
-            aria-hidden="true"
-          />
-          <img
-            src="/assets/generated/ls-oregon-flower-trillium.dim_512x512.png"
-            alt=""
-            className="absolute top-32 left-1/3 w-16 h-16 object-contain hidden xl:block"
-            aria-hidden="true"
-          />
         </div>
 
         {/* Content */}
