@@ -1,0 +1,89 @@
+{
+  "kind": "build_request",
+  "title": "Remove capacity wording from Program Details and add more Oregon flower assets",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Remove the capacity wording (“up to 8 kids” / “Limited to 8 children”) from the “Program Details” section wherever it appears on the site (including the Little Sprouts page key-details grid and the Home page Little Sprouts details card).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6",
+          "msg-8"
+        ],
+        "quotes": [
+          "under program details dont say how many kids please change",
+          "no just the up to 8 kids wording should be removed"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On /little-sprouts, the Program Details area no longer mentions any specific child capacity (the line currently reading “Limited to 8 children” is removed).",
+        "On / (Home), the Little Sprouts details card no longer mentions any specific child capacity (the line currently reading “Capacity: Limited to 8 children” is removed).",
+        "No other Program Details fields (ages/schedule/time/cost/etc.) are changed."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Create a few additional Oregon flower illustration assets in the same calm, minimal botanical style as the existing site decorations, and add them as static files under frontend/public/assets/generated.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-9"
+        ],
+        "quotes": [
+          "also create a few more oregon flowers"
+        ]
+      },
+      "acceptanceCriteria": [
+        "At least three new Oregon-flower illustration PNGs (transparent background) are added to frontend/public/assets/generated using the exact filenames specified in imageRequirements.required.",
+        "New assets are visually consistent with the existing nature-themed decorative art (minimal, not cartoonish)."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Render the newly generated Oregon flower assets in the UI as additional subtle decorative elements (non-interactive, aria-hidden) in an existing decorative area so they are visible in the deployed site.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-9"
+        ],
+        "quotes": [
+          "also create a few more oregon flowers"
+        ]
+      },
+      "acceptanceCriteria": [
+        "At least one page displays the new Oregon flower images as subtle decoration (e.g., in the Home page’s existing decorative background layer).",
+        "Decorative images do not interfere with content readability (kept low-opacity, behind content, and pointer-events disabled).",
+        "All decorative flower images have empty alt text and/or aria-hidden=\"true\" (consistent with existing decorative assets usage)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend files under frontend/src/components/ui and the immutable hook paths must not be edited; compose them instead.",
+    "Keep all backend logic in the existing single Motoko actor; no backend changes are required for this request."
+  ],
+  "nonGoals": [
+    "Do not add or change registration flows, forms, or backend data models.",
+    "Do not redesign the overall site layout or navigation as part of this change."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Minimal Oregon white oak leaf + acorn line illustration, earthy neutral palette, transparent background (ls-oregon-flower-oak.dim_512x512.png)",
+      "Minimal Oregon grape flower cluster line illustration, earthy neutral palette, transparent background (ls-oregon-flower-oregon-grape.dim_512x512.png)",
+      "Minimal camas lily bloom line illustration, earthy neutral palette, transparent background (ls-oregon-flower-camas.dim_512x512.png)",
+      "Minimal trillium bloom line illustration, earthy neutral palette, transparent background (ls-oregon-flower-trillium.dim_512x512.png)"
+    ],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

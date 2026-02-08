@@ -1,0 +1,25 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-08T22:25:00.675Z",
+  "summary": "REQ-1 appears implemented by removing the capacity line from the Little Sprouts Program Details grid and the Home page details card area shown, and REQ-3 is implemented by rendering the new decorative Oregon flower images on HomePage with non-interactive/aria-hidden styling. However, REQ-2 (adding the actual PNG assets under frontend/public/assets/generated with the specified filenames) is not reflected in the diff (no files added).",
+  "missing_requirements": [
+    {
+      "id": "REQ-2",
+      "requirement": "Add at least three new Oregon-flower illustration PNGs (transparent background) under frontend/public/assets/generated using the exact specified filenames.",
+      "reason": "Diff shows zero added files; only references to the new asset filenames were added in HomePage.tsx, but the PNG files themselves are not added under frontend/public/assets/generated.",
+      "evidence": [
+        "File diff summary: Added: 0",
+        "frontend/src/pages/HomePage.tsx (references /assets/generated/ls-oregon-flower-*.png, but no corresponding added files shown)"
+      ]
+    }
+  ],
+  "hallucinated_features": [],
+  "confidence": 0.8,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/pages/HomePage.tsx",
+    "frontend/src/pages/LittleSproutsPage.tsx",
+    "project_state.json"
+  ]
+}

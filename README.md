@@ -1,2 +1,3 @@
-# modoc-street-garden-preschool
-Exported from Caffeine project: Remove capacity wording from Program Details and add more Oregon flower assets
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

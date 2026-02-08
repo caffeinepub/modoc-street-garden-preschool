@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": true,
+  "imageRequirements": "## Required Images\n- Minimal Oregon white oak leaf + acorn line illustration, earthy neutral palette, transparent background (ls-oregon-flower-oak.dim_512x512.png)\n- Minimal Oregon grape flower cluster line illustration, earthy neutral palette, transparent background (ls-oregon-flower-oregon-grape.dim_512x512.png)\n- Minimal camas lily bloom line illustration, earthy neutral palette, transparent background (ls-oregon-flower-camas.dim_512x512.png)\n- Minimal trillium bloom line illustration, earthy neutral palette, transparent background (ls-oregon-flower-trillium.dim_512x512.png)",
+  "existing_features": [
+    {
+      "id": "feature-remove-the-capacity-wording-up-to-8-kids-limited-to-8-children-from-the-program-details-section-wherever-it-appears-on-the-site-including-the-little-sprouts-page-key-details-grid-and-the-home-page-little-sprouts-details-card",
+      "title": "Remove the capacity wording (“up to 8 kids” / “Limited to 8 children”) from the “Program Details” section wherever it appears on the site (including the Little Sprouts page key-details grid and the Home page Little Sprouts details card).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-few-additional-oregon-flower-illustration-assets-in-the-same-calm-minimal-botanical-style-as-the-existing-site-decorations-and-add-them-as-static-files-under-frontend-public-assets-generated",
+      "title": "Create a few additional Oregon flower illustration assets in the same calm, minimal botanical style as the existing site decorations, and add them as static files under frontend/public/assets/generated.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-the-newly-generated-oregon-flower-assets-in-the-ui-as-additional-subtle-decorative-elements-non-interactive-aria-hidden-in-an-existing-decorative-area-so-they-are-visible-in-the-deployed-site",
+      "title": "Render the newly generated Oregon flower assets in the UI as additional subtle decorative elements (non-interactive, aria-hidden) in an existing decorative area so they are visible in the deployed site.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Remove the \"up to 8 kids\" wording from the Program Details section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Create/add a few more Oregon flower assets (e.g., illustrations/graphics)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Remove capacity wording from Program Details and add more Oregon flower assets",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

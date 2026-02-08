@@ -1,0 +1,19 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets up TanStack Router with seven routes (Home, Little Sprouts, About, Program, Tuition, Parent Handbook, Contact) wrapped in the SiteLayout component.",
+  "frontend/src/main.tsx": "Application entry point that renders the app with QueryClientProvider only (Internet Identity provider removed).",
+  "frontend/src/components/SiteLayout.tsx": "Shared layout wrapper that renders the TopNav component and an Outlet for routed page content with no footer.",
+  "frontend/src/components/TopNav.tsx": "Sticky header navigation component using shadcn NavigationMenu with links to all seven pages (including new Little Sprouts link) and the preschool name as a home link.",
+  "frontend/src/components/ParentHandbookAccordion.tsx": "Accessible accordion component displaying seven handbook section summaries with keyboard navigation support.",
+  "frontend/src/components/InterestListForm.tsx": "Interest list form component with four fields (parent name, child age, email, desired start year), client-side validation, and backend submission with success/error feedback.",
+  "frontend/src/pages/HomePage.tsx": "Landing page featuring a compact Little Sprouts Garden Club intro section (with subtle decorative botanical/grass/earthworm/Oregon flower background elements at 20% opacity and a link to the full page) followed by the Fall 2027 preschool overview section, with capacity wording removed from Program Details.",
+  "frontend/src/pages/AboutPage.tsx": "About page with four sections covering program philosophy, garden preschool model, language and communication, and program leadership.",
+  "frontend/src/pages/ProgramPage.tsx": "Program page detailing ages, schedule, program type (Oregon DELC), curriculum overview, outdoor/garden learning, and inclusion/equity statement.",
+  "frontend/src/pages/TuitionPage.tsx": "Tuition page displaying projected rates ($1,200/month full-time, $850/month part-time), sibling discount note, and what tuition includes.",
+  "frontend/src/pages/ParentHandbookPage.tsx": "Parent Handbook page with download button linking to PDF, client-side availability check that displays a graceful error message if the PDF is missing, accordion summaries of handbook sections, and DELC compliance statement.",
+  "frontend/src/pages/ContactInterestListPage.tsx": "Contact page with interest list form and email contact section using mailto link.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for future React Query hooks (currently minimal as form handles backend interaction directly).",
+  "frontend/src/index.css": "Global styles with OKLCH color system defining earthy neutral palette (cream/sand backgrounds, sage/olive primary, terracotta accents) for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme with nature-based color tokens, custom spacing, and system font stack.",
+  "frontend/src/pages/LittleSproutsPage.tsx": "Dedicated Little Sprouts Preschool Garden Club page with all required sections (title, overview, key details without capacity wording, What We Do, Daily Rhythm, Learning Through Nature, What to Bring, flyer image, and registration with email CTA to ssralarson@gmail.com) in a calm, minimal layout using existing shadcn-ui components and Tailwind theme tokens.",
+  "frontend/DEPLOYMENT_NOTES.md": "Frontend verification checklist documenting route/nav setup, Home Little Sprouts section compactness and decoration, flyer asset path, handbook download behavior, and deployment contingency plan for known generic configuration errors."
+}
